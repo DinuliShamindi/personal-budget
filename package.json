@@ -1,24 +1,27 @@
 {
   "name": "personal-budget",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "homepage": "https://DinuliShamindi.github.io/personal-budget",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.5.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dinuli Shamindi",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^5.1.0"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
